@@ -4,17 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "DEBUG=muons:* ava test/ --verbose",
     "setup": "DEBUG=muons:* node setup.js",
     "lint": "standart"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "ava": "^4.0.0",
+    "sqlite3": "^5.0.2",
     "standart": "^6.1.0"
   },
   "dependencies": {
     "chalk": "^4.1.0",
+    "defaults": "^1.0.3",
     "dotenv": "^10.0.0",
     "inquirer": "^8.2.0",
     "mariadb": "^2.5.5",

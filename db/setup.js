@@ -3,7 +3,7 @@ require('dotenv').config()
 const debug = require('debug')('u920415849_node:db:setup')
 const db = require('./')
 const inquirer = require('inquirer')
-const chalk=require("chalk")
+const chalk = require('chalk')
 
 const prompt = inquirer.createPromptModule()
 
