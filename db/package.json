@@ -1,0 +1,22 @@
+{
+  "name": "db",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "standart -fix"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "standart": "^6.1.0"
+  },
+  "dependencies": {
+    "mariadb": "^2.5.5",
+    "mysql2": "^2.3.3",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.12.5"
+  }
+}
