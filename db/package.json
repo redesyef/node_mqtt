@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "DEBUG=muons:* ava test/ --verbose",
+    "test": "DEBUG=muons:* nyc --reporter=lcov ava test/ --verbose",
     "setup": "DEBUG=muons:* node setup.js",
     "lint": "standart"
   },
@@ -12,6 +12,7 @@
   "license": "ISC",
   "devDependencies": {
     "ava": "^4.0.0",
+    "nyc": "^15.1.0",
     "sqlite3": "^5.0.2",
     "standart": "^6.1.0"
   },
